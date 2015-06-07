@@ -1,0 +1,61 @@
+Homework 1
+Lars Butler
+
+Files included:
+    HW1.java - Interactive text/shell UI for exercising GenericArray functions
+    GenericArray.java - Core code for the assignment
+    GenericArrayTest.hava - Unit tests for GenericArray
+    Testable.java - Lightweight unit testing library class
+    HW1-test-report1.pdf - Console ouput of program testing
+    HW1-test-report2.pdf - Console output, continued
+    HW1.txt - This file
+
+To aid me in developing GenericArray.java, I've written
+some basic unittest code (GenericArrayTest.java) using an extremely lightweight
+unit testing utility class I wrote from scratch (Testable.java).
+
+I added a bit more functionality to GenericArray than was required for the
+assignment, including the `size()` and `getArray()` methods. These were
+helpful for testing; I hope that's not an issue.
+
+I didn't really know what _exactly_ to include for the test report, so I've
+included screenshorts PDF format. Please let me know if there's anything you'd
+like me to do differently on the next assignments.
+
+To run the interactive program:
+
+$ javac HW1.java
+$ java HW1
+
+Help text will be displayed to show you how to use it.
+
+To run the test code and see a summarized test report:
+
+$ javac GenericArrayTest.java
+$ java GenericArrayTest
+
+The test output should look like this:
+
+testGet_empty: pass
+testGet_typical: pass
+testSet_empty: pass
+testSet_typical: pass
+testAdd_typical: pass
+testAdd_full: pass
+testIsFull: pass
+testRemove_failures: pass
+testRemove_success: pass
+testInsert_empty_array: pass
+testInsert_nonempty_array: pass
+testReverse: pass
+12/12 tests ran successfully (failed: 0)
+
+I apologize for the messiness of HW1.java; I kind of ran out of time for this
+week and I needed to get this last piece done fast. Hopefully, if I can reuse
+the code for the next assignment, it will be a bit cleaner and have better
+docs. I also didn't know exactly what you were expected for the UI code, so I
+just kind of made it up as I went along. Again, if you would like to see
+something different next time, please let me know.
+
+Thanks,
+-Lars
