@@ -90,10 +90,10 @@ public class Week2 {
     }
 
     public static void ui() {
-        System.out.println("Welcome to the GenericArray interactive shell!");
-        System.out.println();
         final int arrayCap = 3;
         RootishArrayStack<String> array = new RootishArrayStack<>(arrayCap, String.class);
+        System.out.printf("Welcome to the %s interactive shell!", array.getClass().getName());
+        System.out.println();
         Scanner scanner = new Scanner(System.in);
         String input = "";
         System.out.printf("Initial array capacity: %d\n\n", arrayCap);
