@@ -55,25 +55,6 @@ public class Testable {
                     b.toString()));
         }
     }
-    //    public void assertEqual(Double a, Double b) throws TestItFailure {
-    //        if (!a.equals(b)) {
-    //
-    //        }
-    //        try {
-    //            this.assertThat(a.equals(b));
-    //        }
-    //        catch (TestItFailure e) {
-    //            throw new TestItFailure(String.format("%f != %f", a, b));
-    //        }
-    //    }
-
-    //    public void assertEqual(Integer a, Integer b) throws TestItFailure {
-    //        this.assertThat(a.equals(b));
-    //    }
-    //
-    //    public void assertEqual(String a, String b) throws TestItFailure {
-    //        this.assertThat(a.equals(b));
-    //    }
 
     public void fail() {
         assertThat(false);
@@ -88,7 +69,7 @@ public class Testable {
     }
 
     /**
-     * 
+     *
      * @param verbose: if true, print stack traces of errors to stderr;
      * otherwise, just show "pass" or "fail" for each test.
      */
