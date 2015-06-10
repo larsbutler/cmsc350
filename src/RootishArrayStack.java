@@ -1,25 +1,31 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
-
 
 /**
  * Most of the credit for this code goes to:
  * http://opendatastructures.org/ods-java/2_Array_Based_Lists.html
  * Code from opendatastructures.org is licensed under the Creative Commons
- * License.
- * 
+ * License. See:
+ *   - http://opendatastructures.org/
+ *   - https://creativecommons.org/licenses/by/2.5/ca/
+ *
+ * I wanted to include a proper copyright notice, but opendatastructures.org
+ * does not post any such copyright notice (at least none that I could find).
+ *
  * My major contribution to this is researching the generic stuff and
  * implementing `newArray`. In the guide at opendatastructures.org, `newArray`
  * is referenced all over the place, but I never saw any implementation
  * details--contrary to main public methods of this class, for which the guide
  * included complete, working code.
- * 
+ *
  * Dynamically instantiating generic arrays turns out to be really tricky.
  * Who knew? :)
  * I got a lot of help from this thread, in order to implement `newArray`:
  * http://stackoverflow.com/questions/3403909/get-generic-type-of-class-at-runtime
  */
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class RootishArrayStack <E> {
 
